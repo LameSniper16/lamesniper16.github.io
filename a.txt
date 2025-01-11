@@ -1,0 +1,4 @@
+.fontstyle {
+	font-family: "Roboto";
+	src: url(assets/fonts/Roboto-Bold.ttf);
+}
