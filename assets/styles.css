@@ -1,4 +1,72 @@
-.fontstyle {
+header nav ul {
+	position: fixed;
+	top: 0; left: 0; width: 100%;
+	z-index: 1000;
+	padding-top: 60px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	background: #111;
+	padding: 10px;
+	margin: 0;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 15px;
+}
+
+nav ul li a {
 	font-family: "Roboto";
 	src: url(assets/fonts/Roboto-Bold.ttf);
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li.logo {
+	margin-right: auto;
+}
+
+nav ul li.logo img {
+	height: 40px;
+	width: auto;
+}
+
+.juan {
+	position: relative;
+	text-align: center;
+}
+
+.juan img {
+	width: 100%;
+	height: auto;
+	opacity: 0.8;
+}
+
+.social {
+    position: fixed; /* Initially fixed */
+    bottom: 20px; /* Align at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    display: flex; /* Arrange icons horizontally */
+    gap: 15px; /* Space between icons */
+    z-index: 100;
+}
+
+.social a img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1); /* White icons */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social a img:hover {
+	transform: scale(1.1);
+}
+
+.social.stopped {
+    position: absolute;
+    bottom: 20px; /* Stick to the bottom of the background */
+    left: 50%;
+    transform: translateX(-50%);
 }
