@@ -64,8 +64,8 @@ nav ul li.logo img {
 }
 
 .social a img {
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
 	filter: invert(1); 
 	transition: transform 0.2s ease, opacity 0.2s ease;
 }
