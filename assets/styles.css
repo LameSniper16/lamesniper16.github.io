@@ -33,40 +33,43 @@ nav ul li.logo img {
 }
 
 .juan {
+	overflow: hidden;
 	position: relative;
 	text-align: center;
 }
 
 .juan img {
-	width: 100%;
-	height: auto;
-	opacity: 0.8;
+	object-fit: cover;
+	object-position: center;
+	display: flex;
+	justify-content: center;
+}
+
+.nightcontainer {
+  height: 100vh;
+  //overflow: hidden;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
 }
 
 .social {
-    position: fixed; /* Initially fixed */
-    bottom: 20px; /* Align at the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
-    display: flex; /* Arrange icons horizontally */
-    gap: 15px; /* Space between icons */
-    z-index: 100;
+	position: fixed; 
+	bottom: 20px; 
+	left: 50%; 
+	transform: translateX(-50%);
+	display: flex; 
+	gap: 15px; 
+	z-index: 100;
 }
 
 .social a img {
-    width: 40px;
-    height: 40px;
-    filter: invert(1); /* White icons */
-    transition: transform 0.2s ease, opacity 0.2s ease;
+	width: 40px;
+	height: 40px;
+	filter: invert(1); 
+	transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .social a img:hover {
 	transform: scale(1.1);
-}
-
-.social.stopped {
-    position: absolute;
-    bottom: 20px; /* Stick to the bottom of the background */
-    left: 50%;
-    transform: translateX(-50%);
 }
