@@ -46,11 +46,11 @@ nav ul li.logo img {
 }
 
 .nightcontainer {
-  height: 100vh;
-  //overflow: hidden;
-  display: flex;
-  width: 100vw;
-  justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	width: 100vw;
+	justify-content: center;
 }
 
 .social {
