@@ -1,14 +1,4 @@
 
-.container {
-	overflow-y: scroll;
-	-ms-overflow-style: none; /* Internet Explorer and older Edge */
-	scrollbar-width: none; /* Firefox */
-}
-  
-  .container::-webkit-scrollbar {
-	display: none; /* Chrome, Safari, Edge */
-}  
-
 header nav ul {
 	position: fixed;
 	top: 0; left: 0; width: 100%;
