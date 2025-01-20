@@ -1,3 +1,14 @@
+
+.container {
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* Internet Explorer and older Edge */
+	scrollbar-width: none; /* Firefox */
+}
+  
+  .container::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Edge */
+}  
+
 header nav ul {
 	position: fixed;
 	top: 0; left: 0; width: 100%;
@@ -72,4 +83,67 @@ nav ul li.logo img {
 
 .social a img:hover {
 	transform: scale(1.1);
+}
+
+.blogpostcontainer {
+	display: grid;
+	column-gap: 100px;
+	grid-template-columns: auto auto auto;
+	justify-content: space-around;
+}
+
+.blogpostcontainer > div {
+	background-color: #1b1b1b;
+	padding: 20px;
+	font-size: 30px;
+	width: 25vw;
+	text-align: center;
+}
+
+.blogpostcontainer > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: top;
+}
+
+.blogtitle {
+	font-family: "Roboto";
+	src: url(./Roboto-Bold.ttf);
+	color: #fff;
+	text-decoration: none;
+	font-size: 40px;
+	display: inline-block;
+}
+
+.blogdescription {
+	object-fit: contain;
+}
+
+.blogdata {
+	object-fit: contain;
+}
+
+.latestposts {
+	font-family: "Roboto";
+	src: url(./Roboto-Bold.ttf);
+	color: #fff;
+	text-decoration: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	font-size: 40px;
+	display: inline-block;
+}
+.latestposts > p {
+	display: inline-block;
+}
+
+.latestpostsarrow {
+	filter: invert(1);
+	width: auto;
+	height: 30px;
+	font-size: 40px;
+	vertical-align: middle;
+	padding-left: 10px;
 }
