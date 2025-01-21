@@ -11,10 +11,6 @@
     font-display: swap;
 }
 
-body {
-	background-color: #000;
-}
-
 .container {
 	overflow-y: scroll;
 	-ms-overflow-style: none; /* Internet Explorer and older Edge */
