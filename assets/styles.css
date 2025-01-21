@@ -1,16 +1,19 @@
 @font-face {
-    font-family: 'Roboto	';
-    src: url('Roboto-Medium.eot');
-    src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Roboto-Medium.woff2') format('woff2'),
-        url('Roboto-Medium.woff') format('woff'),
-        url('Roboto-Medium.ttf') format('truetype'),
-        url('Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Medium.eot");
+    src: url("./fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Roboto-Medium.woff2") format("woff2"),
+        url("./fonts/Roboto-Medium.woff") format("woff"),
+        url("./fonts/Roboto-Medium.ttf") format("truetype"),
+        url("./fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
+body {
+	background-color: #000;
+}
 .container {
 	overflow-y: scroll;
 	-ms-overflow-style: none; /* Internet Explorer and older Edge */
@@ -93,7 +96,7 @@ nav ul li.logo img {
 }
 
 .social a img:hover {
-	transform: scale(1.1);
+	transform: scale(1.25);
 }
 
 .blogpostcontainer {
@@ -103,12 +106,32 @@ nav ul li.logo img {
 	justify-content: space-around;
 }
 
+@media (max-width: 1080px) {
+	.blogpostcontainer {
+		grid-template-columns: auto auto;
+		row-gap: 20px;
+		justify-content: space-around;
+	}
+}	
+
+@media (max-width: 738px) {
+	.blogpostcontainer {
+		grid-template-columns: auto;
+		row-gap: 20px;
+		justify-content: space-around;
+	}
+}	
+
 .blogpostcontainer > div:hover .blogtitle{
 	color: rgb(255, 182, 182);
 }
 .blogpostcontainer > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-color: #1b1b1b;
 	padding-top: 20px;
+	margin-bottom: 30px;
 	font-size: 30px;
 	width: 350px;
 	text-align: center;
@@ -120,6 +143,15 @@ nav ul li.logo img {
 	object-fit: contain;
 	object-position: top;
 }
+
+.blogtitle, .blogdescription {
+	word-wrap: break-word; /* Ensures text wraps inside the container */
+	overflow-wrap: break-word; /* Provides fallback for older browsers */
+	white-space: normal; /* Allows text to wrap onto the next line */
+	text-overflow: ellipsis; /* Optional: Adds ellipsis for overflow text */
+	overflow: hidden; /* Prevents text from overflowing */
+	display: block; /* Ensures the title/description behaves as block elements */
+  }
 
 .blogtitle {
 	font-family: "Roboto", sans-serif;
@@ -148,28 +180,13 @@ nav ul li.logo img {
 	color: #fff;
 	text-decoration: none;
 	font-size: 10px;
+	margin-top: auto;
 	text-align: left;
 	padding-top: 60px;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
 }
-
-@media (max-width: 1080px) {
-	.blogpostcontainer {
-		grid-template-columns: auto auto;
-		row-gap: 20px;
-		justify-content: center;
-	}
-}	
-
-@media (max-width: 738px) {
-	.blogpostcontainer {
-		grid-template-columns: auto;
-		row-gap: 20px;
-		justify-content: center;
-	}
-}	
 
 .latestposts {
 	font-family: "Roboto", sans-serif;
