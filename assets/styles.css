@@ -43,6 +43,7 @@ nav ul li a {
 	font-family: "Roboto", sans-serif;
 	color: #fff;
 	text-decoration: none;
+	margin-right: 10px;
 }
 
 nav ul li.logo {
@@ -206,4 +207,14 @@ nav ul li.logo img {
 	font-size: 40px;
 	vertical-align: middle;
 	padding-left: 10px;
+}
+
+.previewdescription {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+}
+
+.previewimg {
+	width: 10px;
+	height: 10px;
 }
