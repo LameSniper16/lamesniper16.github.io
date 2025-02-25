@@ -151,6 +151,14 @@ nav ul li.logo img {
 	display: block; /* Ensures the title/description behaves as block elements */
   }
 
+  .blogtitle2 {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+  }
+
 .blogtitle {
 	font-family: "Roboto", sans-serif;
 	color: #fff;
@@ -212,9 +220,39 @@ nav ul li.logo img {
 .previewdescription {
 	font-family: "Roboto", sans-serif;
 	color: #fff;
+	text-align: center;
 }
 
 .previewimg {
-	width: 10px;
-	height: 10px;
+	width: 50%;
+	height: 50%;
+	padding: auto;
+	text-align: center;
+}
+
+.belowblogimage {
+	text-align: center;
+}
+
+.publishdate {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 70%;
+	display: inline-block;
+}
+
+.postedby {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 70%;
+	display: inline-block;
+}
+
+.postbody {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	line-height: 1.75;
+}
+.prvimgcontainer {
+	text-align: center;
 }
