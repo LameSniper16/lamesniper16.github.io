@@ -78,4 +78,7 @@ async function updateBlogPostFromHtml(url, blogPostElement) {
 }
 
 // Call the function with the URL of the JSON file
-loadPostsFromJson('./post/files.json');
+window.addEventListener('DOMContentLoaded', () => {
+  loadPostsFromJson('./post/files.json');
+});
+
