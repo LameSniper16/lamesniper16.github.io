@@ -253,6 +253,104 @@ nav ul li.logo img {
 	color: #fff;
 	line-height: 1.75;
 }
+
+.ultimatepostcontainerreborn { 
+	display: flex;
+}
 .prvimgcontainer {
 	text-align: center;
 }
+
+  .container-postitself {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+  }
+  
+  .image-postitself {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	overflow: hidden;
+	height: 100%;
+  }
+
+  .image-wrapper {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+  }
+  
+  .image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .text-postitself {
+	flex: 1;
+	background-color: #1a1a1a;
+	font-family: "Roboto", sans-serif;
+	min-width: 40vw;
+	color: #fff;
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+  
+  .text-postitself h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+  }
+  
+  .text-postitself p {
+	font-size: 1em;
+	line-height: 1.5;
+  }
+  
+  .meta-postitself {
+	margin-top: 30px;
+	font-size: 0.9em;
+	color: #ccc;
+  }
+  
+  .carousel-track {
+	display: flex;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	scrollbar-width: none; /* Firefox */
+  }
+
+  .carousel-track .image-wrapper {
+	flex: 0 0 100%;
+	scroll-snap-align: center;
+	height: 100%;
+  }
+  
+  .carousel-track img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .carousel-arrow {
+	top: 50%;
+	font-size: 2rem;
+	color: white;
+	background: rgba(0,0,0,1);
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+  }
+  
+  .carousel-arrow.left {
+	left: 10px;
+  }
+  
+  .carousel-arrow.right {
+	right: 10px;
+  }
