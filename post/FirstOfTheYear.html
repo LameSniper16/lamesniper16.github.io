@@ -5,20 +5,23 @@
     <title> What is this website? </title>
     <link rel="icon" type="image/x-icon" href="https://www.lamesniper16.com/assets/favicon.ico">
 	<meta charset="UTF-8">
-    <meta name="description" content="placeholdeer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://www.lamesniper16.com/assets/styles.css">
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var previewDescription = document.querySelector(".previewdescription");
-            var metaDescription = document.querySelector("meta[name='description']");
-            
-            if (previewDescription && metaDescription) {
-                metaDescription.setAttribute("content", previewDescription.textContent);
-            }
-        });
-      </script>
+
+
+<!--  Essential META Tags -->
+<meta property="og:title" content="European Travel Destinations">
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+<meta name="twitter:card" content="summary_large_image">
+
+<!--  Non-Essential, But Recommended -->
+<meta property="og:description" content="Offering tour packages for individuals or groups.">
+<meta property="og:site_name" content="European Travel, Inc.">
+<meta name="twitter:image:alt" content="Alt text for image">
+<meta name="releasedate" content="27/06/2025 05:50">
 
 </head>
 
@@ -43,7 +46,7 @@
             <div class="image-postitself" id="carousel1-wrapper">
                 <button class="carousel-arrow left" onclick="moveCarousel('carousel1', -1)">&#10094;</button>
                 <div class="carousel-track" id="carousel1">
-                  <div class="image-wrapper" id="previewimage"> <img src="./firstoftheyear_images/UT.png" onclick="openLightbox(this.src)" alt="1" > </div>
+                  <div class="image-wrapper" id="previewimg"> <img src="./firstoftheyear_images/UT.png" onclick="openLightbox(this.src)" alt="1" > </div>
                   <div class="image-wrapper"> <img src="./firstoftheyear_images/AT.png" onclick="openLightbox(this.src)" alt="2" > </div>
                   <div class="image-wrapper"> <img src="./firstoftheyear_images/ET.png" onclick="openLightbox(this.src)" alt="3" > </div>
                 </div>
