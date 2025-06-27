@@ -53,7 +53,7 @@ async function updateBlogPostFromHtml(url, blogPostElement) {
     // Extract elements from the HTML file
     const titleElement = doc.querySelector('meta[property="og:title"]');
     const descriptionElement = doc.querySelector('meta[property="og:description"]');
-    const imgElement = doc.querySelector('#previewimg');
+    const imgElement = doc.querySelector('.previewimg');
     const dateElement = doc.querySelector('meta[name="releasedate"]');
 
     const title = titleElement?.getAttribute('content')?.trim() || 'Default Title';
