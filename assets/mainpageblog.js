@@ -1,4 +1,5 @@
 console.log('Hey!');
+
 async function loadPostsFromJson(jsonUrl) {
   try {
     // Fetch the JSON file containing HTML file references
