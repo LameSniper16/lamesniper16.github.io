@@ -54,11 +54,11 @@ async function updateBlogPostFromHtml(url, blogPostElement) {
     const imgElement = doc.querySelector('#previewimg');
     const dateElement = doc.querySelector('meta[name="releasedate"]');
 
-    const title = titleElement?.textContent.trim() || 'Default Title';
-    const description =
-      descriptionElement?.textContent.trim() || 'No description available.';
+    const title = titleElement?.getAttribute('content')?.trim() || 'Default Title';
+    const description = descriptionElement?.getAttribute('content')?.trim() || 'No description available.';
     const imgSrc = imgElement?.getAttribute('src') || './assets/default.png';
-    const publishDate = dateElement?.textContent.trim() || 'Unknown date';
+    const publishDate = dateElement?.getAttribute('content')?.trim() || 'Unknown date';
+
 
     // Update the corresponding elements in the blog post
     const blogTitle = blogPostElement.querySelector('.blogtitle');
