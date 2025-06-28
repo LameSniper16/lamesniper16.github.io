@@ -65,7 +65,7 @@ async function updateBlogPostFromHtml(url, blogPostElement) {
     // Update the corresponding elements in the blog post
     const blogTitle = blogPostElement.querySelector('.blogtitle');
     const blogDescription = blogPostElement.querySelector('.blogdescription');
-    const blogImage = blogPostElement.querySelector('img');
+    const blogImage = blogPostElement.querySelector('.blogimage');
     const blogDate = blogPostElement.querySelector('.blogdata');
 
     if (blogTitle) blogTitle.textContent = title;
