@@ -53,12 +53,12 @@ async function updateBlogPostFromHtml(url, blogPostElement) {
     // Extract elements from the HTML file
     const titleElement = doc.querySelector('meta[property="og:title"]');
     const descriptionElement = doc.querySelector('meta[property="og:description"]');
-    const imgElement = doc.querySelector('.previewimg');
+    const imgElement = doc.querySelector('meta[property="og:image"]');
     const dateElement = doc.querySelector('meta[name="releasedate"]');
 
     const title = titleElement?.getAttribute('content')?.trim() || 'Default Title';
     const description = descriptionElement?.getAttribute('content')?.trim() || 'No description available.';
-    const imgSrc = imgElement?.getAttribute('src') || './assets/default.png';
+    const imgSrc = imgElement?.getAttribute('content')?.trim() || './assets/default.png';
     const publishDate = dateElement?.getAttribute('content')?.trim() || 'Unknown date';
 
 
