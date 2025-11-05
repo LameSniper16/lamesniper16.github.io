@@ -9,7 +9,7 @@
   { "id": 47346, "name": "The Utter East" },
   { "id": 47431, "name": "Computer World" },
   {
-    "name": "Default Roblox Sky",
+    "name": "Ethereal Sea",
     "faces": {
       "Bk": 271042516,
       "Dn": 271077243,
@@ -20,7 +20,7 @@
     }
   },
   {
-    "name": "Classic Bright Blue",
+    "name": "Desertic Horizons",
     "faces": {
       "Bk": 600830446,
       "Dn": 600831635,
@@ -31,7 +31,7 @@
     }
   },
   {
-    "name": "Sunset Sky",
+    "name": "Hyper Sky",
     "faces": {
       "Bk": 1417494030,
       "Dn": 1417494146,
@@ -42,7 +42,7 @@
     }
   },
   {
-    "name": "Space Sky",
+    "name": "Space Void",
     "faces": {
       "Bk": 159454299,
       "Dn": 159454296,
@@ -50,17 +50,6 @@
       "Lf": 159454286,
       "Rt": 159454300,
       "Up": 159454288
-    }
-  },
-  {
-    "name": "Night Sky",
-    "faces": {
-      "Bk": 182630149,
-      "Dn": 182630177,
-      "Ft": 182630136,
-      "Lf": 182630113,
-      "Rt": 182630153,
-      "Up": 182630181
     }
   }
 ]
